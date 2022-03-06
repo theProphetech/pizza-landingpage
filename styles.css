@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #dc042b;
+  --options--color: #fff;
+}
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  font-family: "Salsa", cursive;
+  font-size: normal;
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+
+#container--1 {
+  position: relative;
+  /* border: 2px solid; */
+  height: 100%;
+  width: 75%;
+  padding: 1.5em 6rem 1rem 4rem;
+  background-color: var(--options--color);
+  /* overflow: hidden; */
+  border-radius: 0px 5rem 10rem 0px;
+  /* overflow: hidden; */
+}
+/* #container--1::after {
+  content: "hello";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  background-color: red;
+  border-radius: 0 0 0 0;
+  height: 100%;
+  width: 100px;
+  border-radius: 0px 0 0 0px;
+  border-radius: 0px 5rem 10rem 0px;
+
+} */
+header {
+  /* border: 2px solid dimgray; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 0.8rem;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  line-height: 30px;
+}
+
+.logo .logo--icon i {
+  transform: rotate(275deg) translate(3px, 5px);
+}
+/* the navigation styling will start from here */
+nav ul {
+  /* border: red 2px solid; */
+  display: flex;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  justify-content: baseline;
+  gap: 6rem;
+}
+
+ul li {
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  line-height: 30px;
+}
+
+/* the navigation styling end here */
+
+/* .options--block {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  line-height: 30px;
+}
+
+.options--block i {
+  margin-left: 1rem;
+} */
+
+/* appyling css to main start here */
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6rem 0 0 0;
+}
+
+.hero--content {
+  width: 100%;
+}
+.hero--content > div {
+  margin-bottom: 5rem;
+}
+.hero--content .heading {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.heading h2 span {
+  color: var(--primary-color);
+}
+.hero--content .writing {
+  padding: 0 19rem 0 0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 25px;
+}
+
+.hero--content button {
+  outline: none;
+  padding: 15px 40px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 100px;
+  color: var(--options--color);
+  font-family: "Salsa", cursive;
+  font-size: 23px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.hero--image {
+  position: relative;
+  /* width: 100%; */
+  height: 100%;
+  border: 2px solid;
+  padding: 2rem;
+  z-index: 999;
+}
+
+.hero--image > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(20rem, -14rem) scale(1);
+  z-index: 999;
+}
+/* appyling css to main end here */
+
+#container--2 {
+  position: relative;
+  padding: 1rem 0rem 1rem 0rem;
+  /* border: 2px solid; */
+  /* width: 100%; */
+  width: 25%;
+  height: 100%;
+  background-color: var(--primary-color);
+  /* z-index:999; */
+}
+
+#container--2::before {
+  content: "hello ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translate(-200px, 0);
+}
+#container--2 header {
+  width: 100%;
+  display: block;
+  /* line-height: 30px; */
+  /* border: 2px solid; */
+}
+#container--2 .options--block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transform: translateX(-50px);
+}
+
+.options--block i {
+  margin-left: 1rem;
+  line-height: 30px;
+  color: var(--options--color);
+  opacity: 0.9;
+  font-size: 18px;
+}
